@@ -34,4 +34,4 @@ fs.writeFileSync("demo.txt","Hello from Node.js");
 const data = fs.readFileSync("demo.txt","utf8");
 fs.appendFileSync("demo.txt","\nthis is new line");
 fs.writeFileSync("delete-me","file to practice delete operation");
-
+fs.unlinkSync("delete-me.txt");
