@@ -15,3 +15,7 @@ console.log(OS.totalmem());
 console.log(OS.freemem());
 // os.totalmem() returns the total amount of system memory in bytes.
 // os.freemem() returns the amount of free system memory in bytes.
+
+//2.Path module
+// The 'path' module provides utilities for working with file and directory paths.
+const path = require("path");
