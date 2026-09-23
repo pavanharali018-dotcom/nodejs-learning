@@ -25,3 +25,7 @@ console.log(path.basename("folder/subfolder/file.txt"));
 // path.basename() returns the last part of a path, usually the file name.
 console.log(path.dirname("folder/subfolder/file.txt"));
 // path.dirname() returns the directory part of a path.
+
+
+//3.FS module
+// The 'fs' module allows Node.js to work with files and directories on the computer.
