@@ -31,3 +31,5 @@ console.log(path.dirname("folder/subfolder/file.txt"));
 // The 'fs' module allows Node.js to work with files and directories on the computer.
 const fs = require("fs");
 fs.writeFileSync("demo.txt","Hello from Node.js");
+const data = fs.readFileSync("demo.txt","utf8");
+console.log(data);
