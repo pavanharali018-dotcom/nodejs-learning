@@ -19,3 +19,9 @@ console.log(OS.freemem());
 //2.Path module
 // The 'path' module provides utilities for working with file and directory paths.
 const path = require("path");
+console.log(path.join("folder","subfolder","file.txt"));
+// path.join() → joins different parts of a path into one proper path.
+console.log(path.basename("folder/subfolder/file.txt"));
+// path.basename() returns the last part of a path, usually the file name.
+console.log(path.dirname("folder/subfolder/file.txt"));
+// path.dirname() returns the directory part of a path.
