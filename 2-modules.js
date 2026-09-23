@@ -35,3 +35,11 @@ const data = fs.readFileSync("demo.txt","utf8");
 fs.appendFileSync("demo.txt","\nthis is new line");
 fs.writeFileSync("delete-me","file to practice delete operation");
 fs.unlinkSync("delete-me.txt");
+
+// fs.writeFileSync() creates a file and writes content to it. If the file exists, it overwrites the content.
+
+// fs.readFileSync() reads the content of a file.
+
+// fs.appendFileSync() adds new content to the end of an existing file without overwriting it.
+
+// fs.unlinkSync() deletes a file.
