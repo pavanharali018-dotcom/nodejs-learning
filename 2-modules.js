@@ -29,6 +29,7 @@ console.log(path.dirname("folder/subfolder/file.txt"));
 
 //3.FS module
 // The 'fs' module allows Node.js to work with files and directories on the computer.
+// sync fs
 const fs = require("fs");
 fs.writeFileSync("demo.txt","Hello from Node.js");
 const data = fs.readFileSync("demo.txt","utf8");
@@ -43,3 +44,4 @@ fs.unlinkSync("delete-me.txt");
 // fs.appendFileSync() adds new content to the end of an existing file without overwriting it.
 
 // fs.unlinkSync() deletes a file.
+
