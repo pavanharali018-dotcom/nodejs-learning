@@ -72,3 +72,12 @@ fs.writeFile("async-demo.txt","hello from aync node.js!",(err)=>{
     }
     console.log("written successfully");
 });
+
+fs.appendFile("async-demo.txt", "\nThis is an appended line.", (err) => {
+    if (err) {
+        console.log(err);
+        return;
+    }
+
+    console.log("Content appended successfully");
+});
