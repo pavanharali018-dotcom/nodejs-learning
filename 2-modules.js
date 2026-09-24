@@ -46,11 +46,12 @@ const fs = require("fs");
 // fs.unlinkSync() deletes a file.
 
 // async fs module
-fs.readFile("demo.txt","utf8",(err,data)=>{
+fs.readFile("docomo.txt","utf8",(err,data)=>{
     if(err){
         console.log(err);
         return;
     }
     console.log(data);
 
-})
+});
+// In asynchronous file operations, the callback receives an error if the operation fails.
