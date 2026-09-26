@@ -97,3 +97,9 @@ fs.unlink("delete-me-async.txt",(err)=>{
     }
     console.log("deleted file successfully");
 });
+
+// fs.unlink() deletes a file asynchronously.
+
+// The callback receives an error if the file operation fails.
+
+// return stops the callback when an error occurs.
