@@ -65,27 +65,35 @@ const fs = require("fs");
 // });
 // In asynchronous file operations, the callback receives an error if the operation fails.
 
-fs.writeFile("async-demo.txt","hello from aync node.js!",(err)=>{
+// fs.writeFile("async-demo.txt","hello from aync node.js!",(err)=>{
+//     if(err){
+//         console.log(err);
+//         return;
+//     }
+//     console.log("written successfully");
+// });
+
+// fs.appendFile("async-demo.txt", "\nThis is an appended line.", (err) => {
+//     if (err) {
+//         console.log(err);
+//         return;
+//     }
+
+//     console.log("Content appended successfully");
+// });
+
+// fs.writeFile("delete-me-async.txt","creating this file to learn delete method in async",(err)=>{
+//     if(err){
+//         console.log(err);
+//         return;
+//     }
+//     console.log("created a delete me file successfully!");
+// });
+
+fs.unlink("delete-me-async.txt",(err)=>{
     if(err){
         console.log(err);
         return;
     }
-    console.log("written successfully");
-});
-
-fs.appendFile("async-demo.txt", "\nThis is an appended line.", (err) => {
-    if (err) {
-        console.log(err);
-        return;
-    }
-
-    console.log("Content appended successfully");
-});
-
-fs.writeFile("delete-me-async.txt","creating this file to learn delete method in async",(err)=>{
-    if(err){
-        console.log(err);
-        return;
-    }
-    console.log("created a delete me file successfully!");
+    console.log("deleted file successfully");
 });
