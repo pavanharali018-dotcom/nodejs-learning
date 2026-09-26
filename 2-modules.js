@@ -81,3 +81,11 @@ fs.appendFile("async-demo.txt", "\nThis is an appended line.", (err) => {
 
     console.log("Content appended successfully");
 });
+
+fs.writeFile("delete-me-async.txt","creating this file to learn delete method in async",(err)=>{
+    if(err){
+        console.log(err);
+        return;
+    }
+    console.log("created a delete me file successfully!");
+});
