@@ -90,13 +90,13 @@ const fs = require("fs");
 //     console.log("created a delete me file successfully!");
 // });
 
-fs.unlink("delete-me-async.txt",(err)=>{
-    if(err){
-        console.log(err);
-        return;
-    }
-    console.log("deleted file successfully");
-});
+// fs.unlink("delete-me-async.txt",(err)=>{
+//     if(err){
+//         console.log(err);
+//         return;
+//     }
+//     console.log("deleted file successfully");
+// });
 
 // fs.unlink() deletes a file asynchronously.
 
