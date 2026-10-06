@@ -20,4 +20,5 @@
  npm install       -> rebuilds node_modules from package.json
  npm init          -> creates package.json for my project (-y = default answers)
  scripts      -> shortcut commands, run with `npm run <name>`
+ Dependencies are external packages that your project needs to run.
 */
