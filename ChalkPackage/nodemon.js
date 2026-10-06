@@ -12,3 +12,21 @@
 // 3. Run the app with Nodemon
 // npm run dev
 // Now Nodemon watches for file changes and automatically restarts the app.
+
+
+// ==================== NODEMON ====================
+
+// Nodemon automatically restarts the Node.js application
+// whenever a file changes.
+
+// Install as a development dependency:
+// npm install --save-dev nodemon
+
+// Run using:
+// npm run dev
+
+// `dev` is just a custom script name.
+// Nodemon is mainly used during development.
+
+// It saves us from manually stopping and restarting
+// `node app.js` after every change.
