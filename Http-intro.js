@@ -33,6 +33,8 @@
 const http = require("http");
  
 const server = http.createServer((req,res)=>{
+  console.log("Method",req.method);
+  console.log("url:",req.url);
    res.end("hello from my node server");
 });
 
