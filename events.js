@@ -1,0 +1,1 @@
+// An event is an action or occurrence that your program can respond to.
