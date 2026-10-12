@@ -19,7 +19,7 @@
 // server.listen(3000) starts the server on port 3000.
 
 // Basic flow:
-//
+//0
 // Browser
 //    ↓ request
 // Node server
@@ -30,19 +30,31 @@
 
 
 
-const http = require("http");
+// const http = require("http");
  
-const server = http.createServer((req,res)=>{
-  console.log("Method",req.method);
-  console.log("url:",req.url);
-  if (req.url === "/") {
-    res.end("Home Page");
-}
+// const server = http.createServer((req,res)=>{
+//   console.log("Method",req.method);
+//   console.log("url:",req.url);
+//   if (req.url === "/") {
+//     res.end("Home Page");
+// }
 
-if (req.url === "/about") {
-    res.end("About Page");
-}
-   res.end("hello from my node server");
+// if (req.url === "/about") {
+//     res.end("About Page");
+// }
+//    res.end("hello from my node server");
+// });
+
+// server.listen(3000);
+
+const http = require("http");
+
+const server2 = http.createServer((req,res)=>{
+    console.log("Method:",req.method);
+    console.log("URL:",req.url);
+    res.setHeader("Content-Type","text/plain");
+    res.statusCode=200;
+    res.end("Welcome to my Server",);
 });
 
-server.listen(3000);
+server2.listen(3000);
